@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("../font/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("../font/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto-Regular';
+}
+header, footer{
+    font-family: 'Roboto-Medium';
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto-Bold';
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+main{
+    flex-grow: 1;
+}
+
+/*Главная*/
+@keyframes aniLineHeader {
+    15% {
+        letter-spacing: 20px;
+    }
+}
+.c_header_line{
+    color: white;
+    background: linear-gradient(90deg, #563434 0%, #9d7171 35%, #9d7171 70%, #563434 100%);
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px;
+    animation: aniLineHeader 2s;
+}
+
+.c_bg_slider{
+    background-color: #fbe9c8;
+}
+.carousel-control-prev:focus{
+    box-shadow: unset !important;
+    border-color: unset !important;
+}
+.carousel-control-next:focus{
+    box-shadow: unset !important;
+    border-color: unset !important;
+}
+.c_block_slide_img > img{
+    height: 500px;
+}
+
+.test-0-logo{
+    max-width: 120px;
+}
+.nav-link{
+    color: #7e4e4e !important;
+}
+.nav-link:hover{
+    color: #df950d !important;
+}
+.c_active{
+    color: #df950d !important;
+}
+.c_active:hover{
+    color: #7e4e4e !important;
+}
+
+.c_bg_gray{
+    background-color: #e5e5e5;
+}
+.c_bg_orange{
+    background-color: #df950d;
+}
+
+a {
+    color: #7e4e4e;
+}
+a:hover{
+    color: #df950d;
+}
+button:focus{
+    box-shadow: 0 0 0 0.25rem #c39090 !important;
+    border-color: #7e4e4e !important;
+}
+input:focus{
+    box-shadow: 0 0 0 0.25rem #c39090 !important;
+    border-color: #7e4e4e !important;
+}
+select:focus{
+    box-shadow: 0 0 0 0.25rem #c39090 !important;
+    border-color: #7e4e4e !important;
+}
+.btn:focus{
+    box-shadow: 0 0 0 0.25rem #c39090 !important;
+    border-color: #7e4e4e !important;
+}
+.btn{
+    background-color: #7e4e4e !important;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    transition: .2s all;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px 0 black;
+}
+.btn:hover{
+    z-index: 1;
+    border-radius: 30px;
+    color: #7e4e4e;
+    transition: .2s all;
+    box-shadow: inset 0 0 10px 0 black;
+}
+.btn:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: .2s all;
+    border-radius: 30px;
+    box-shadow: inset 0 0 10px 0 black;
+}
+.btn:hover::before{
+    top: 0;
+}
+
+
+.c_plus_block{
+    transform: perspective(800px) rotateY(20deg);
+    transition: .4s all;
+}
+.c_plus_block:hover{
+    transform: rotateY(0deg) scale(1.1);
+    transition: .4s all;
+}
+.c_plus_block1{
+    background-color: #fbe9c8;
+}
+.c_plus_block2{
+    background-color: #ceffce;
+}
+.c_plus_block3{
+    background-color: #fdfdbd;
+}
+.c_plus_block4{
+    background-color: #fdd1fd;
+}
+.c_icon_plus{
+    font-size: 30px;
+}
+
+.c_checked_search{
+    cursor: pointer;
+}
+.form-check-input:checked{
+    background-color: #7e4e4e;
+}
+.test-0-vall:checked{
+    color: #7e4e4e;
+    border-color: #7e4e4e;
+}
+
+.c_hover_block:hover{
+    transition: .4s all;
+    box-shadow: 5px 5px 0px #e0e0e0;
+    transform: translateX(-7px);
+}
+
+footer{
+    background-color: #b9b9b9;
+}
+
+.c_socials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.c_socials > a{
+    cursor: pointer;
+}
+.c_socials > a > img{
+    padding: 10px;
+    max-width: 100px;
+    opacity: 0.9;
+    transition: .4s all;
+}
+.c_socials > a > img:hover{
+    transition: .4s all;
+    transform: translateY(-5px);
+    opacity: 1;
+}
+.c_nav_footer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.c_map_block{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.c_img_akcia{
+    width: auto;
+}
+
+/*Результаты поиска*/
+.с_span_h{
+    font-family: 'Roboto-Regular';
+}
+
+/*Управление бронированием*/
+.c_add_gamer{
+    font-size: 50px;
+    text-align: center;
+    color: #7e4e4e;
+    cursor: pointer;
+}
+.c_add_gamer:hover{
+    color: #ab6969;
+    transition: .4s all;
+}
+.c_del_gamer{
+    font-size: 50px;
+    text-align: center;
+    color: #df950d;
+    cursor: pointer;
+}
+.c_del_gamer:hover{
+    color: #fda80f;
+    transition: .4s all;
+}
+
+/*Личный кабинет*/
+.c_out_profile{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*Выбор места*/
+.c_table_seats{
+    display: flex;
+    justify-content: center;
+}
+.c_select_td{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #7e4e4e;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: white;
+    transition: .4s all;
+}
+.c_select_td:hover{
+    background-color: #ffd27e;
+    transition: .4s all;
+}
+.c_empty{
+    width: 40px;
+}
+.c_select_td > p{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.c_seat{
+    background-color: #ffd27e;
+}
